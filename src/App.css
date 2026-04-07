@@ -1,0 +1,78 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.plot {
+  flex: 1;
+  min-height: 0;
+}
+
+.plot .mafs {
+  width: 100%;
+  height: 100%;
+}
+
+/* Input section */
+.input-section {
+  background: #000;
+  border-bottom: 1px solid #222;
+}
+
+.input-row,
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+}
+
+.input-row {
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.fn-label {
+  font-size: 1.1rem;
+  color: #555;
+  white-space: nowrap;
+  user-select: none;
+  min-width: 3ch;
+  transition: color 0.2s;
+}
+
+.input-section.error .fn-label {
+  color: #f87171;
+}
+
+math-field {
+  flex: 1;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  padding: 4px 0;
+  background: transparent;
+  color: white;
+  --caret-color: #58a6ff;
+  --selection-background-color: rgba(88, 166, 255, 0.25);
+  --primary-color: #58a6ff;
+  --text-font-family: inherit;
+  --smart-fence-color: #555;
+}
+
+/* Slider */
+.slider {
+  flex: 1;
+  accent-color: #58a6ff;
+  cursor: pointer;
+  height: 4px;
+}
+
+.n-value {
+  color: #58a6ff;
+  font-size: 1.1rem;
+  min-width: 2ch;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
